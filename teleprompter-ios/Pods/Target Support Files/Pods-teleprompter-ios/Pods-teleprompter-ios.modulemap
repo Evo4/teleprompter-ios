@@ -1,0 +1,6 @@
+framework module Pods_teleprompter_ios {
+  umbrella header "Pods-teleprompter-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

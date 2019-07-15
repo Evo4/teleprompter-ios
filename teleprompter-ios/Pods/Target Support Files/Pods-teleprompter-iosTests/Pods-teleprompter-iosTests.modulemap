@@ -1,0 +1,6 @@
+framework module Pods_teleprompter_iosTests {
+  umbrella header "Pods-teleprompter-iosTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

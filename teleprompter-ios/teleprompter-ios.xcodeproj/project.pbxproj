@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11AB8BB22162C97F0045AA39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AB8BB12162C97F0045AA39 /* Main.storyboard */; };
+		11BE9F752164236200F760C4 /* RecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE9F742164236200F760C4 /* RecordService.swift */; };
+		11D1283322DB744D00B54B5A /* Font Awesome 5 Pro-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 11D1283222DB744D00B54B5A /* Font Awesome 5 Pro-Solid-900.otf */; };
+		11E63F09215F896500C7484F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E63F08215F896500C7484F /* AppDelegate.swift */; };
+		11E63F0B215F896500C7484F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E63F0A215F896500C7484F /* MainVC.swift */; };
+		11E63F10215F896800C7484F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E63F0F215F896800C7484F /* Assets.xcassets */; };
+		11E63F13215F896800C7484F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E63F11215F896800C7484F /* LaunchScreen.storyboard */; };
+		11E63F1E215F896800C7484F /* teleprompter_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E63F1D215F896800C7484F /* teleprompter_iosTests.swift */; };
+		11E63F29215F896800C7484F /* teleprompter_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E63F28215F896800C7484F /* teleprompter_iosUITests.swift */; };
+		11E63F4D215FC52000C7484F /* SplitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E63F4C215FC52000C7484F /* SplitVC.swift */; };
+		11E63F4F215FC7CB00C7484F /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E63F4E215FC7CB00C7484F /* MasterVC.swift */; };
+		11F14FB5216390C60049E2FA /* RecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F14FB4216390C60049E2FA /* RecordVC.swift */; };
+		11F14FB7216390E50049E2FA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F14FB6216390E50049E2FA /* SettingsVC.swift */; };
+		11F14FBC2163ABB30049E2FA /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F14FBB2163ABB30049E2FA /* Record.swift */; };
+		3C52B28F21726A2C00DC9C9E /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52B28E21726A2C00DC9C9E /* Int+Extension.swift */; };
+		3C52B2DA2172705D00DC9C9E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C52B2D92172705D00DC9C9E /* CoreBluetooth.framework */; };
+		3C52B2F7217271F400DC9C9E /* AirTurnInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C52B2ED217271F400DC9C9E /* AirTurnInterface.framework */; };
+		3C52B2F8217271F400DC9C9E /* AirTurnUI.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C52B2F0217271F400DC9C9E /* AirTurnUI.strings */; };
+		3C52B2F9217271F400DC9C9E /* AirTurnUIImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C52B2F2217271F400DC9C9E /* AirTurnUIImages.xcassets */; };
+		3C52B2FA217271F400DC9C9E /* AirTurnUIPeripheralController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C52B2F3217271F400DC9C9E /* AirTurnUIPeripheralController.m */; };
+		3C52B2FB217271F400DC9C9E /* AirTurnUIConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C52B2F6217271F400DC9C9E /* AirTurnUIConnectionController.m */; };
+		3C52B2FD2172729800DC9C9E /* AirTurnInterface.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C52B2ED217271F400DC9C9E /* AirTurnInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53DA56EA0D7B2462B2931E3C /* Pods_teleprompter_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEC1D1B207B2B6DF8C57036 /* Pods_teleprompter_iosUITests.framework */; };
+		722E6A8314A239A602821FF6 /* Pods_teleprompter_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E50203F156D747F3836404D /* Pods_teleprompter_ios.framework */; };
+		AAE647CE8E9C7D2C031D54CC /* Pods_teleprompter_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD9F9F64DD2DC6E81D5B375 /* Pods_teleprompter_iosTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11E63F1A215F896800C7484F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E63EFD215F896500C7484F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11E63F04215F896500C7484F;
+			remoteInfo = "teleprompter-ios";
+		};
+		11E63F25215F896800C7484F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E63EFD215F896500C7484F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11E63F04215F896500C7484F;
+			remoteInfo = "teleprompter-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C52B2FC2172728500DC9C9E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3C52B2FD2172729800DC9C9E /* AirTurnInterface.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11AB8BB12162C97F0045AA39 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		11BE9F742164236200F760C4 /* RecordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordService.swift; sourceTree = "<group>"; };
+		11D1283222DB744D00B54B5A /* Font Awesome 5 Pro-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Pro-Solid-900.otf"; sourceTree = "<group>"; };
+		11E63F05215F896500C7484F /* teleprompter-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "teleprompter-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E63F08215F896500C7484F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11E63F0A215F896500C7484F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		11E63F0F215F896800C7484F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11E63F12215F896800C7484F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11E63F14215F896800C7484F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E63F19215F896800C7484F /* teleprompter-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "teleprompter-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E63F1D215F896800C7484F /* teleprompter_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teleprompter_iosTests.swift; sourceTree = "<group>"; };
+		11E63F1F215F896800C7484F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E63F24215F896800C7484F /* teleprompter-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "teleprompter-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E63F28215F896800C7484F /* teleprompter_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teleprompter_iosUITests.swift; sourceTree = "<group>"; };
+		11E63F2A215F896800C7484F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E63F4C215FC52000C7484F /* SplitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitVC.swift; sourceTree = "<group>"; };
+		11E63F4E215FC7CB00C7484F /* MasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVC.swift; sourceTree = "<group>"; };
+		11F14FB4216390C60049E2FA /* RecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVC.swift; sourceTree = "<group>"; };
+		11F14FB6216390E50049E2FA /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		11F14FBB2163ABB30049E2FA /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		183C0E2E0413C9210E766729 /* Pods-teleprompter-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teleprompter-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-teleprompter-iosTests/Pods-teleprompter-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E50203F156D747F3836404D /* Pods_teleprompter_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teleprompter_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C52B28E21726A2C00DC9C9E /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		3C52B2D92172705D00DC9C9E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3C52B2ED217271F400DC9C9E /* AirTurnInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AirTurnInterface.framework; sourceTree = "<group>"; };
+		3C52B2EE217271F400DC9C9E /* teleprompter-ios-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "teleprompter-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		3C52B2F1217271F400DC9C9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AirTurnUI.strings; sourceTree = "<group>"; };
+		3C52B2F2217271F400DC9C9E /* AirTurnUIImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AirTurnUIImages.xcassets; sourceTree = "<group>"; };
+		3C52B2F3217271F400DC9C9E /* AirTurnUIPeripheralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirTurnUIPeripheralController.m; sourceTree = "<group>"; };
+		3C52B2F4217271F400DC9C9E /* AirTurnUIConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirTurnUIConnectionController.h; sourceTree = "<group>"; };
+		3C52B2F5217271F400DC9C9E /* AirTurnUIPeripheralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirTurnUIPeripheralController.h; sourceTree = "<group>"; };
+		3C52B2F6217271F400DC9C9E /* AirTurnUIConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirTurnUIConnectionController.m; sourceTree = "<group>"; };
+		48549A1C33F95A72903E9A8A /* Pods-teleprompter-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teleprompter-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-teleprompter-ios/Pods-teleprompter-ios.release.xcconfig"; sourceTree = "<group>"; };
+		91A294C0E3ACC305AD94D7C8 /* Pods-teleprompter-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teleprompter-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-teleprompter-iosUITests/Pods-teleprompter-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2DE237F98B48CCB2B8E8D62 /* Pods-teleprompter-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teleprompter-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-teleprompter-iosUITests/Pods-teleprompter-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB2F73DD7828D19D538DE26C /* Pods-teleprompter-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teleprompter-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-teleprompter-iosTests/Pods-teleprompter-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		CBD9F9F64DD2DC6E81D5B375 /* Pods_teleprompter_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teleprompter_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFEC1D1B207B2B6DF8C57036 /* Pods_teleprompter_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teleprompter_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FF21A1F8D8EC4C1811AA6D /* Pods-teleprompter-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teleprompter-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-teleprompter-ios/Pods-teleprompter-ios.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11E63F02215F896500C7484F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C52B2F7217271F400DC9C9E /* AirTurnInterface.framework in Frameworks */,
+				3C52B2DA2172705D00DC9C9E /* CoreBluetooth.framework in Frameworks */,
+				722E6A8314A239A602821FF6 /* Pods_teleprompter_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E63F16215F896800C7484F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE647CE8E9C7D2C031D54CC /* Pods_teleprompter_iosTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E63F21215F896800C7484F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53DA56EA0D7B2462B2931E3C /* Pods_teleprompter_iosUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11BE9F732164234600F760C4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				11BE9F742164236200F760C4 /* RecordService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		11E63EFC215F896500C7484F = {
+			isa = PBXGroup;
+			children = (
+				11E63F07215F896500C7484F /* teleprompter-ios */,
+				11E63F1C215F896800C7484F /* teleprompter-iosTests */,
+				11E63F27215F896800C7484F /* teleprompter-iosUITests */,
+				11E63F06215F896500C7484F /* Products */,
+				6B692B1214572D26E1353015 /* Pods */,
+				496470FD3F70926E3BED8661 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11E63F06215F896500C7484F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11E63F05215F896500C7484F /* teleprompter-ios.app */,
+				11E63F19215F896800C7484F /* teleprompter-iosTests.xctest */,
+				11E63F24215F896800C7484F /* teleprompter-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11E63F07215F896500C7484F /* teleprompter-ios */ = {
+			isa = PBXGroup;
+			children = (
+				3C52B2EC217271F400DC9C9E /* AirTurn */,
+				11BE9F732164234600F760C4 /* Services */,
+				11E63F3E215F9ED900C7484F /* Custom font */,
+				11E63F39215F8BA800C7484F /* Controller */,
+				11E63F37215F8B8400C7484F /* Model */,
+				11E63F08215F896500C7484F /* AppDelegate.swift */,
+				11E63F0F215F896800C7484F /* Assets.xcassets */,
+				11E63F11215F896800C7484F /* LaunchScreen.storyboard */,
+				11E63F14215F896800C7484F /* Info.plist */,
+				11AB8BB12162C97F0045AA39 /* Main.storyboard */,
+				3C52B28E21726A2C00DC9C9E /* Int+Extension.swift */,
+			);
+			path = "teleprompter-ios";
+			sourceTree = "<group>";
+		};
+		11E63F1C215F896800C7484F /* teleprompter-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				11E63F1D215F896800C7484F /* teleprompter_iosTests.swift */,
+				11E63F1F215F896800C7484F /* Info.plist */,
+			);
+			path = "teleprompter-iosTests";
+			sourceTree = "<group>";
+		};
+		11E63F27215F896800C7484F /* teleprompter-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11E63F28215F896800C7484F /* teleprompter_iosUITests.swift */,
+				11E63F2A215F896800C7484F /* Info.plist */,
+			);
+			path = "teleprompter-iosUITests";
+			sourceTree = "<group>";
+		};
+		11E63F37215F8B8400C7484F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11F14FBB2163ABB30049E2FA /* Record.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11E63F39215F8BA800C7484F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11E63F0A215F896500C7484F /* MainVC.swift */,
+				11E63F4C215FC52000C7484F /* SplitVC.swift */,
+				11E63F4E215FC7CB00C7484F /* MasterVC.swift */,
+				11F14FB4216390C60049E2FA /* RecordVC.swift */,
+				11F14FB6216390E50049E2FA /* SettingsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11E63F3E215F9ED900C7484F /* Custom font */ = {
+			isa = PBXGroup;
+			children = (
+				11D1283222DB744D00B54B5A /* Font Awesome 5 Pro-Solid-900.otf */,
+			);
+			path = "Custom font";
+			sourceTree = "<group>";
+		};
+		3C52B2EC217271F400DC9C9E /* AirTurn */ = {
+			isa = PBXGroup;
+			children = (
+				3C52B2ED217271F400DC9C9E /* AirTurnInterface.framework */,
+				3C52B2EE217271F400DC9C9E /* teleprompter-ios-Bridging-Header.h */,
+				3C52B2EF217271F400DC9C9E /* AirTurnUI */,
+			);
+			name = AirTurn;
+			path = "teleprompter-ios/AirTurn";
+			sourceTree = SOURCE_ROOT;
+		};
+		3C52B2EF217271F400DC9C9E /* AirTurnUI */ = {
+			isa = PBXGroup;
+			children = (
+				3C52B2F0217271F400DC9C9E /* AirTurnUI.strings */,
+				3C52B2F2217271F400DC9C9E /* AirTurnUIImages.xcassets */,
+				3C52B2F3217271F400DC9C9E /* AirTurnUIPeripheralController.m */,
+				3C52B2F4217271F400DC9C9E /* AirTurnUIConnectionController.h */,
+				3C52B2F5217271F400DC9C9E /* AirTurnUIPeripheralController.h */,
+				3C52B2F6217271F400DC9C9E /* AirTurnUIConnectionController.m */,
+			);
+			path = AirTurnUI;
+			sourceTree = "<group>";
+		};
+		496470FD3F70926E3BED8661 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C52B2D92172705D00DC9C9E /* CoreBluetooth.framework */,
+				2E50203F156D747F3836404D /* Pods_teleprompter_ios.framework */,
+				CBD9F9F64DD2DC6E81D5B375 /* Pods_teleprompter_iosTests.framework */,
+				DFEC1D1B207B2B6DF8C57036 /* Pods_teleprompter_iosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B692B1214572D26E1353015 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF21A1F8D8EC4C1811AA6D /* Pods-teleprompter-ios.debug.xcconfig */,
+				48549A1C33F95A72903E9A8A /* Pods-teleprompter-ios.release.xcconfig */,
+				183C0E2E0413C9210E766729 /* Pods-teleprompter-iosTests.debug.xcconfig */,
+				CB2F73DD7828D19D538DE26C /* Pods-teleprompter-iosTests.release.xcconfig */,
+				91A294C0E3ACC305AD94D7C8 /* Pods-teleprompter-iosUITests.debug.xcconfig */,
+				A2DE237F98B48CCB2B8E8D62 /* Pods-teleprompter-iosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11E63F04215F896500C7484F /* teleprompter-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11E63F2D215F896800C7484F /* Build configuration list for PBXNativeTarget "teleprompter-ios" */;
+			buildPhases = (
+				AFC9917C86D5E4173A691615 /* [CP] Check Pods Manifest.lock */,
+				11E63F01215F896500C7484F /* Sources */,
+				11E63F02215F896500C7484F /* Frameworks */,
+				11E63F03215F896500C7484F /* Resources */,
+				F5925B4C35DE54BF41BA9EFB /* [CP] Embed Pods Frameworks */,
+				3C52B2FC2172728500DC9C9E /* CopyFiles */,
+				3C52B2FE217272A000DC9C9E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "teleprompter-ios";
+			productName = "teleprompter-ios";
+			productReference = 11E63F05215F896500C7484F /* teleprompter-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11E63F18215F896800C7484F /* teleprompter-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11E63F30215F896800C7484F /* Build configuration list for PBXNativeTarget "teleprompter-iosTests" */;
+			buildPhases = (
+				766052A3A25D4641BF82B845 /* [CP] Check Pods Manifest.lock */,
+				11E63F15215F896800C7484F /* Sources */,
+				11E63F16215F896800C7484F /* Frameworks */,
+				11E63F17215F896800C7484F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11E63F1B215F896800C7484F /* PBXTargetDependency */,
+			);
+			name = "teleprompter-iosTests";
+			productName = "teleprompter-iosTests";
+			productReference = 11E63F19215F896800C7484F /* teleprompter-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11E63F23215F896800C7484F /* teleprompter-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11E63F33215F896800C7484F /* Build configuration list for PBXNativeTarget "teleprompter-iosUITests" */;
+			buildPhases = (
+				758D04F98BA1AC53D72BA519 /* [CP] Check Pods Manifest.lock */,
+				11E63F20215F896800C7484F /* Sources */,
+				11E63F21215F896800C7484F /* Frameworks */,
+				11E63F22215F896800C7484F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11E63F26215F896800C7484F /* PBXTargetDependency */,
+			);
+			name = "teleprompter-iosUITests";
+			productName = "teleprompter-iosUITests";
+			productReference = 11E63F24215F896800C7484F /* teleprompter-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11E63EFD215F896500C7484F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Sispo;
+				TargetAttributes = {
+					11E63F04215F896500C7484F = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					11E63F18215F896800C7484F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 11E63F04215F896500C7484F;
+					};
+					11E63F23215F896800C7484F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 11E63F04215F896500C7484F;
+					};
+				};
+			};
+			buildConfigurationList = 11E63F00215F896500C7484F /* Build configuration list for PBXProject "teleprompter-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11E63EFC215F896500C7484F;
+			productRefGroup = 11E63F06215F896500C7484F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11E63F04215F896500C7484F /* teleprompter-ios */,
+				11E63F18215F896800C7484F /* teleprompter-iosTests */,
+				11E63F23215F896800C7484F /* teleprompter-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11E63F03215F896500C7484F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E63F13215F896800C7484F /* LaunchScreen.storyboard in Resources */,
+				11D1283322DB744D00B54B5A /* Font Awesome 5 Pro-Solid-900.otf in Resources */,
+				11E63F10215F896800C7484F /* Assets.xcassets in Resources */,
+				3C52B2F8217271F400DC9C9E /* AirTurnUI.strings in Resources */,
+				3C52B2F9217271F400DC9C9E /* AirTurnUIImages.xcassets in Resources */,
+				11AB8BB22162C97F0045AA39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E63F17215F896800C7484F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E63F22215F896800C7484F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C52B2FE217272A000DC9C9E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nscript=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AirTurnInterface.framework/strip-frameworks.sh\"\nif [ -f \"$script\" ]; then\nbash \"$script\"\nfi\n";
+		};
+		758D04F98BA1AC53D72BA519 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-teleprompter-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		766052A3A25D4641BF82B845 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-teleprompter-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFC9917C86D5E4173A691615 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-teleprompter-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5925B4C35DE54BF41BA9EFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-teleprompter-ios/Pods-teleprompter-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-teleprompter-ios/Pods-teleprompter-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11E63F01215F896500C7484F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F14FB5216390C60049E2FA /* RecordVC.swift in Sources */,
+				11E63F0B215F896500C7484F /* MainVC.swift in Sources */,
+				11BE9F752164236200F760C4 /* RecordService.swift in Sources */,
+				3C52B28F21726A2C00DC9C9E /* Int+Extension.swift in Sources */,
+				3C52B2FA217271F400DC9C9E /* AirTurnUIPeripheralController.m in Sources */,
+				11E63F4F215FC7CB00C7484F /* MasterVC.swift in Sources */,
+				11E63F09215F896500C7484F /* AppDelegate.swift in Sources */,
+				11F14FB7216390E50049E2FA /* SettingsVC.swift in Sources */,
+				3C52B2FB217271F400DC9C9E /* AirTurnUIConnectionController.m in Sources */,
+				11F14FBC2163ABB30049E2FA /* Record.swift in Sources */,
+				11E63F4D215FC52000C7484F /* SplitVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E63F15215F896800C7484F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E63F1E215F896800C7484F /* teleprompter_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E63F20215F896800C7484F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E63F29215F896800C7484F /* teleprompter_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11E63F1B215F896800C7484F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11E63F04215F896500C7484F /* teleprompter-ios */;
+			targetProxy = 11E63F1A215F896800C7484F /* PBXContainerItemProxy */;
+		};
+		11E63F26215F896800C7484F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11E63F04215F896500C7484F /* teleprompter-ios */;
+			targetProxy = 11E63F25215F896800C7484F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11E63F11215F896800C7484F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11E63F12215F896800C7484F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3C52B2F0217271F400DC9C9E /* AirTurnUI.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C52B2F1217271F400DC9C9E /* en */,
+			);
+			name = AirTurnUI.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11E63F2B215F896800C7484F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11E63F2C215F896800C7484F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11E63F2E215F896800C7484F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1FF21A1F8D8EC4C1811AA6D /* Pods-teleprompter-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7738N2HHVW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/teleprompter-ios/AirTurn",
+					"$(PROJECT_DIR)/teleprompter-ios/New\\ Group",
+				);
+				INFOPLIST_FILE = "teleprompter-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pronunciator.teleprompter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "teleprompter-ios/AirTurn/teleprompter-ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11E63F2F215F896800C7484F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48549A1C33F95A72903E9A8A /* Pods-teleprompter-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7738N2HHVW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/teleprompter-ios/AirTurn",
+					"$(PROJECT_DIR)/teleprompter-ios/New\\ Group",
+				);
+				INFOPLIST_FILE = "teleprompter-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pronunciator.teleprompter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "teleprompter-ios/AirTurn/teleprompter-ios-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11E63F31215F896800C7484F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 183C0E2E0413C9210E766729 /* Pods-teleprompter-iosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BX938D4RR;
+				INFOPLIST_FILE = "teleprompter-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.teleprompter-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teleprompter-ios.app/teleprompter-ios";
+			};
+			name = Debug;
+		};
+		11E63F32215F896800C7484F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2F73DD7828D19D538DE26C /* Pods-teleprompter-iosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BX938D4RR;
+				INFOPLIST_FILE = "teleprompter-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.teleprompter-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teleprompter-ios.app/teleprompter-ios";
+			};
+			name = Release;
+		};
+		11E63F34215F896800C7484F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A294C0E3ACC305AD94D7C8 /* Pods-teleprompter-iosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BX938D4RR;
+				INFOPLIST_FILE = "teleprompter-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.teleprompter-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "teleprompter-ios";
+			};
+			name = Debug;
+		};
+		11E63F35215F896800C7484F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2DE237F98B48CCB2B8E8D62 /* Pods-teleprompter-iosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BX938D4RR;
+				INFOPLIST_FILE = "teleprompter-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.teleprompter-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "teleprompter-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11E63F00215F896500C7484F /* Build configuration list for PBXProject "teleprompter-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E63F2B215F896800C7484F /* Debug */,
+				11E63F2C215F896800C7484F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11E63F2D215F896800C7484F /* Build configuration list for PBXNativeTarget "teleprompter-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E63F2E215F896800C7484F /* Debug */,
+				11E63F2F215F896800C7484F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11E63F30215F896800C7484F /* Build configuration list for PBXNativeTarget "teleprompter-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E63F31215F896800C7484F /* Debug */,
+				11E63F32215F896800C7484F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11E63F33215F896800C7484F /* Build configuration list for PBXNativeTarget "teleprompter-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E63F34215F896800C7484F /* Debug */,
+				11E63F35215F896800C7484F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11E63EFD215F896500C7484F /* Project object */;
+}
